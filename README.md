@@ -28,4 +28,4 @@ Természetesen a játéknak rengeteg más változatát is ki lehet találni, de 
 
 ## Nyerő stratégiák
 
-A játék egyes változataiban az egyik játékosnak ismert nyerő stratégiája.
+A játék egyes változataiban az egyik játékosnak ismert [nyerő stratégiája](fabian_kata_cikk.pdf).
