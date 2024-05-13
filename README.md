@@ -28,4 +28,12 @@ Természetesen a játéknak rengeteg más változatát is ki lehet találni, de 
 
 ## Nyerő stratégiák
 
-A játék egyes változataiban az egyik játékosnak ismert [nyerő stratégiája](fabian_kata_cikk.pdf).
+A játék egyes változataiban az egyik játékosnak ismert nyerő stratégiája. Ezek a nyerő stratégiák Fábián Kata [szakdolgozatában](fabian_kata_cikk.pdf) találhatók, bizonyítással együtt. A következő játéktípusokban ismert a nyerő stratégia, a többi még megfejtésre vár.
+
+1. A játékosoknak azonos színű korongjai vannak és az nyer, aki kialakít egy tiltott négyzetet
+2. A játékosoknak különböző színű korongjai vannak és az nyer, aki kialakít egy tiltott négyzetet (itt a 4x4-es és a legalább 5x5-ös táblára van bizonyított stratégia)
+
+Az első esetben ha $n$ és $m$ is páratlan, az első játékosnak van nyerő stratégiája, különben a másodiknak.
+
+A második eset amőba-típusú játék, hiszen két színnel játszódik. Az ilyen játékokban a második játékosnak nem lehet nyerő stratégiája, különben az első "el tudná lopni" a stratégiáját. A cikkben erről is szó esik. Az első játékosnak viszont a megjelölt táblaméretekre van nyerő stratégiája. 
+
