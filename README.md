@@ -26,3 +26,6 @@ Természetesen a játéknak rengeteg más változatát is ki lehet találni, de 
 - a tiltott négyes téglalapjának nem kell a tábla oldalaival párhuzamosnak lennie
 
 
+## Nyerő stratégiák
+
+A játék egyes változataiban az egyik játékosnak ismert nyerő stratégiája.
