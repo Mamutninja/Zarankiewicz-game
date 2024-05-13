@@ -20,7 +20,7 @@ A játék egy $n\cdot m$-es táblán játszódik. A két játékos felváltva he
 
 Természetesen a játéknak rengeteg más változatát is ki lehet találni, de ezekről később nem lesz szó. Néhány ezek közül nem igazán kapcsolódik az eredeti problémához. Például:
 
-- $r\cdot s$-es részmátrixot vehetünk a tiltott négyes helyett
+- $r\cdot s$-es részmátrixot veszünk a tiltott négyes helyett
 - a tiltott négyes egy meghatározott méretű téglalap négy csúcsa
 - a tiltott négyes egy négyzet négy csúcsa
 - a tiltott négyes téglalapjának nem kell a tábla oldalaival párhuzamosnak lennie
