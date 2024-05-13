@@ -3,7 +3,10 @@
 A Zarankiewicz-játék a Zarankiewicz-problémához kapcsolódó kétszemélyes táblajáték.
 
 ## Futtatás
-A 
+A [zarankiewicz_game1.py](zarankiewicz_game1.py) vagy [zarankiewicz_game1.ipynb](zarankiewicz_game1.ipynb) fájl futtatásával indítható el a játék. A következő csomagok szükségesek, melyek mindegyike a *pip install \[xyz\]* paranccsal telepíthető:
+- numpy
+- random
+- pygame
 
 ## Zarankiewicz-probléma
 
@@ -59,6 +62,7 @@ A játék a SPACE megnyomásával indul. Felül jelzi, hogy melyik játékos kö
 <p align="center">
   <img width="200" height="200" src="images-and-links/pvp-mode.gif" alt="animated" >
   <img width="200" height="200" src="images-and-links/pvp-mode2.gif" alt="animated" >
+  <img width="200" height="200" src="images-and-links/pvc_letter_s.gif" alt="animated" >
 </p>
 
 
