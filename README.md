@@ -60,9 +60,9 @@ A játék elinításakor a start gomb megnyomásával a játékmód-választó o
 A játék a SPACE megnyomásával indul. Felül jelzi, hogy melyik játékos következik. Ha két szín van, az első játékosé a zöld, a másodiké a narancssárga. Különben zöld színűek az elfoglalt mezők. A soron következő játékos a kiválasztott cellára kattintással foglalhatja el a mezőt. Ha ez a játékos a számítógép, automatikusan választ mezőt. A játék végét a tiltott négyes megjelenése jelenti. Ekkor a tiltott négyest kiegészítő mező világosabb színű lesz. Az is lehetséges, hogy minden mező betelt, de nincs tiltott négyes. Ekkor döntetlen az eredmény. Ezután SPACE-szel lehet a legutolsó képernyőt megjeleníteni, ami kiírja a győztest (vagy azt, hogy döntetlen) és lehetőséget ad a játék újraindítására. A restart gomb a start képernyőre visz. A játékot bármikor leállíthatjuk az ESCAPE billentyűvel vagy az ablak bezárásával.
 
 <p align="center">
-  <img width="200" height="200" src="images-and-links/pvp-mode.gif" alt="animated" >
   <img width="200" height="200" src="images-and-links/pvp-mode2.gif" alt="animated" >
   <img width="200" height="200" src="images-and-links/pvc_letter_s.gif" alt="animated" >
+  <img width="200" height="200" src="images-and-links/cvc-mode.gif" alt="animated" >
 </p>
 
 
