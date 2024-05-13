@@ -55,7 +55,7 @@ A játék a SPACE megnyomásával indul. Felül jelzi, hogy melyik játékos kö
 
 <p align="center">
   <img width="200" height="200" src="images-and-links/pvp-mode.gif" alt="animated" >
-  <img width="200" height="200" src="images-and-links/game-mode-select.gif" alt="animated" >
+  <img width="200" height="200" src="images-and-links/pvp-mode2.gif" alt="animated" >
 </p>
 
 
