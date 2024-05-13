@@ -11,7 +11,7 @@ A probléma átfogalmazható a következőképp: legfeljebb hány $1$-es lehet e
 A Zarankiewicz-probléma egyik legegyszerűbb esete az, amikor $r=s=2$, azaz nem lehet a mátrixban olyan résztéglalap, amelynek minden csúcsában $1$-es szerepel, és oldalai párhuzamosak a mátrix oldalaival. Ez a téglalap a **tiltott négyes** (forbidden rectangle).
 
 <p align="center">
-  <img width="300" height="300" src="images-and-links/tiltott_negyes.png">
+  <img width="200" height="200" src="images-and-links/tiltott_negyes.png">
 </p>
 
 
