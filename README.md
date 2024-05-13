@@ -2,8 +2,6 @@
 
 A Zarankiewicz-játék a Zarankiewicz-problémához kapcsolódó kétszemélyes táblajáték.
 
-[Zarankiewicz-probléma](https://github.com/Mamutninja/Zarankiewicz-game/edit/main/README.md#zarankiewicz-probl%C3%A9ma)
-
 ## Zarankiewicz-probléma
 
 A [Zarankiewicz-probléma](https://en.wikipedia.org/wiki/Zarankiewicz_problem) egy megoldatlan matematikai probléma. A kérdés, hogy egy $n$ és $m$ csúcsú színosztályú páros gráfnak *maximum hány éle* lehet, ha nem tartalmazhat $r$ és $s$ csúcsú színosztályú teljes páros gráfot részgráfként. Ez a maximális élszám a **Zarankiewicz-szám** adott ($n, m, r, s$) számnégyesre.
@@ -38,4 +36,9 @@ A játék egyes változataiban az egyik játékosnak ismert nyerő stratégiája
 Az első esetben ha $n$ és $m$ is páratlan, az első játékosnak van nyerő stratégiája, különben a másodiknak.
 
 A második eset amőba-típusú játék, hiszen két színnel játszódik. Az ilyen játékokban a második játékosnak nem lehet nyerő stratégiája, különben az első "el tudná lopni" a stratégiáját. A cikkben erről is szó esik. Az első játékosnak viszont a megjelölt táblaméretekre van nyerő stratégiája. 
+
+
+# Játék működése
+
+
 
