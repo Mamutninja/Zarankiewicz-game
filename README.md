@@ -13,4 +13,16 @@ A Zarankiewicz-probléma egyik legegyszerűbb esete az, amikor $r=s=2$, azaz nem
 
 ## Zarankiewicz-játék
 
-A játék egy $n\cdot m$-es táblán játszódik. A két játékos felváltva helyez korongokat a tábla mezőire. Több verziója is ismert, most négyfélét mutatok be. 
+A játék egy $n\cdot m$-es táblán játszódik. A két játékos felváltva helyez korongokat a tábla mezőire. Több verziója is ismert, most négyfélét mutatok be. A *tiltott négyes* a játéknál azt jelenti, hogy a táblán azonos színű korongok vannak egy, a tábla oldalaival párhuzamos téglalap négy csúcsában. A négyféle játéktípus:
+
+- a játékosoknak azonos/ különböző színű korongjaik vannak
+- az nyer/ veszít, aki kialakít egy tiltott négyest
+
+Természetesen a játéknak rengeteg más változatát is ki lehet találni, de ezekről később nem lesz szó. Néhány ezek közül nem igazán kapcsolódik az eredeti problémához. Például:
+
+- $r\cdot s$-es részmátrixot vehetünk a tiltott négyes helyett
+- a tiltott négyes egy meghatározott méretű téglalap négy csúcsa
+- a tiltott négyes egy négyzet négy csúcsa
+- a tiltott négyes téglalapjának nem kell a tábla oldalaival párhuzamosnak lennie
+
+
