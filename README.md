@@ -47,7 +47,7 @@ A második eset amőba-típusú játék, hiszen két színnel játszódik. Az il
 A játék elinításakor a start gomb megnyomásával a játékmód-választó oldalra jutunk. Itt beállíthatjuk, hogy a négy játékmód melyike legyen. A SPACE billentyű lenyomása a többi beállításhoz visz. Itt kiválaszthatjuk, hogy két emberi játékos, egy emberi játékos és egy gép vagy két gép játsszon egymás ellen. Továbbá a tábla méretét is beállíthatjuk. A három előre megadott lehetőség mellett saját méreteket is megadhatunk az $n$ és $m$ feliratú mezőkre kattintva. Bár nagyobb táblaméreteket is meg lehet adni, $20\times20$-asnál lehetőleg ne legyen nagyobb, mert a cellák nagyon kicsik lesznek. A világosabb zöld szín jelzi, hogy írni lehet a "custom" felirat melletti mezőkbe. A BACKSPACE billentyűvel törölni is tudunk belőlük. Az ENTER megnyomásával fejezhetjük be az írást, ekkor visszavált a cella a sötétebb zöld színre. Ha a custom cellák kitöltése után mégis előre megadott méretet választunk, akkor a tábla mérete a kiválasztott előre megadott méretű lesz.
 
 <p align="center">
-  <img width="200" height="200" src="game-mode-select.gif" alt="animated" >
+  <img width="200" height="200" src="images-and-links/game-mode-select.gif" alt="animated" >
 </p>
 
 
