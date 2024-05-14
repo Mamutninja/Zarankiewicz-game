@@ -455,8 +455,120 @@ class Computer():
                             i = self.other_first_move[0]
                             j = self.second_move[1]
                             return i, j
-                    
+                        
+    # non-losing strategy for player 1 and player 2: 2 colors, the one who completes a forbidden rectangle wins               
+    def strategy_draw_2xm_c2(self):
+        if self.player == 1:
+            # if all the cells are empty, choose a random cell
+            if self.other_last_move == (-1, -1):
+                r = random.choice(list(empty_cells))
+                return r
 
+            if n == 2:
+                # if player 2 chose a free column
+                if self.last_move_free[1] == 0:
+                    # choose the same column
+                    i = (self.other_last_move[0] + 1) % 2
+                    j = self.other_last_move[1]
+                    return (i, j)
+                else:
+                    choose_from = set()
+                    for c in empty_cells:
+                        if c[1] not in free_column:
+                            choose_from.add(c)
+                    if choose_from != set():        
+                        r = random.choice(list(choose_from))
+                    else:
+                        r = random.choice(list(empty_cells))
+                    return r
+            if m == 2:
+                # if player 2 chose a free row
+                if self.last_move_free[0] == 0:
+                    # choose the same row
+                    j = (self.other_last_move[1] + 1) % 2
+                    i = self.other_last_move[0]
+                    return (i, j)
+                else:
+                    choose_from = set()
+                    for c in empty_cells:
+                        if c[0] not in free_row:
+                            choose_from.add(c)
+                    if choose_from != set():        
+                        r = random.choice(list(choose_from))
+                    else:
+                        r = random.choice(list(empty_cells))
+                    return r
+                
+        # as player 2, choose the cell "next to" the cell that player 1 chose
+        # as there's a not losing strategy for both players, none of them can win
+        elif self.player == 2:
+            if n == 2:
+                i = (self.other_last_move[0] + 1) % 2
+                j = self.other_last_move[1]
+                return i, j
+            if m == 2:
+                j = (self.other_last_move[1] + 1) % 2
+                i = self.other_last_move[0]
+                return i, j
+    
+    def strategy_3xm_c2_p1(self):
+        # if all the cells are empty, choose a random cell
+        if self.other_last_move == (-1, -1):
+            r = random.choice(list(empty_cells))
+            self.first_move = r
+            return r
+        
+        if n == 3:
+            if self.move_count == 2:
+                choose_from = set()
+                for c in empty_cells:
+                    if c[1] == self.first_move[1]:
+                        choose_from.add(c)
+                r = random.choice(list(choose_from))
+                self.second_move = r
+                return r
+            if self.move_count == 3:
+                i = self.first_move[0]
+                j = random.choice(list(free_column))
+                self.third_move = (i, j)
+                return i, j
+            if self.move_count == 4:
+                choose_from = set()
+                for c in empty_cells:
+                    if c[1] == self.third_move[1]:
+                        choose_from.add(c)
+                r = random.choice(list(choose_from))
+                return r
+            if self.move_count == 5:
+                i = self.first_move[0]
+                j = random.choice(list(free_column))
+                return i, j
+        if m == 3:
+            if self.move_count == 2:
+                choose_from = set()
+                for c in empty_cells:
+                    if c[0] == self.first_move[0]:
+                        choose_from.add(c)
+                r = random.choice(list(choose_from))
+                self.second_move = r
+                return r
+            if self.move_count == 3:
+                j = self.first_move[1]
+                i = random.choice(list(free_row))
+                self.third_move = (i, j)
+                return i, j
+            if self.move_count == 4:
+                choose_from = set()
+                for c in empty_cells:
+                    if c[0] == self.third_move[0]:
+                        choose_from.add(c)
+                r = random.choice(list(choose_from))
+                return r
+            if self.move_count == 5:
+                j = self.first_move[1]
+                i = random.choice(list(free_row))
+                return i, j
+                
     
     # returns the computer's next move
     def move(self):
@@ -484,6 +596,16 @@ class Computer():
         # strategy for n x m tables where n, m >= 4 if there are TWO colors and the computer is player 1
         elif (rect_complete_wins == True) and ((self.player == 1) and (cell_colors == 2) and (((n >= 5) and (m >= 5)) or ((n == 4) and (m == 4)))):
             r = self.strategy_4plus_c2_p1()
+            return r
+        
+        # non-losing strategy for 2 x m and n x 2 tables if there are TWO colors
+        elif (rect_complete_wins == True) and (cell_colors == 2) and (n == 2 or m == 2):
+            r = self.strategy_draw_2xm_c2()
+            return r
+        
+        # strategy for 3 x m (m >=5) and n x 3 (n >= 5) tables for player 1 if there are TWO colors
+        elif (rect_complete_wins == True) and (cell_colors == 2) and (self.player == 1) and ((n == 3 and m >= 5) or (m == 3 and n >= 5)):
+            r = self.strategy_3xm_c2_p1()
             return r
         
         else:
@@ -598,6 +720,7 @@ class Button(pygame.sprite.Sprite):
         
         elif (self.action == "restart") and (current_screen == "winners"):
             c = "waiting_room_restart"
+                        
             
         return c
     
@@ -774,7 +897,7 @@ comps = []
 
 # if it is a player vs computer game, the computer is player 1 or player 2?
 # it is chosen randomly
-comp_which_player = random.randrange(1, 2)
+comp_which_player = random.randrange(1, 3)
 
 if against_comp == 0:
     comp1 = Computer(0)
@@ -963,7 +1086,7 @@ while running:
 
 
         comps = []
-        comp_which_player = random.randrange(1, 2)
+        comp_which_player = random.randrange(1, 3)
 
         if against_comp == 0:
             comp1 = Computer(0)
@@ -1392,3 +1515,4 @@ while running:
 
 
 pygame.quit()
+
