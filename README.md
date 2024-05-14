@@ -94,3 +94,7 @@ Megj.: Az első játékos ha foglalt sorba tett, a második játékos egy lépé
 ### Kétféle szín, $4\times4$-es vagy legalább $5\times5$-ös tábla
 
 Ekkor az első játékosnak van nyerő stratégiája. A stratégia kulcsa egy $L$ alak létrehozása, aminek több esete van, ahogy ezt Fábián Kata részletesen ismertette [cikkében](images-and-links/fabian_kata_cikk.pdf).
+
+<p align="center">
+  <img width="200" height="200" src="images-and-links/two_color_wins_player_1.gif" alt="animated" >
+</p>
